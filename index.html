@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        
+        .hide-scroll-bar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hide-scroll-bar::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasi Goreng Camau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    plugins: [
+                        require('tailwindcss-textshadow'),
+                    ]
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Banner Promo -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-white">
+        <p class="text-center text-sm font-medium animate-pulse"data-aos="fade-right">
+            KAMU LAPER?
+            <a href="#" class="inline-block underline hover:text-black-300 transition"data-aos="fade-right">
+                makan disini aja!
+            </a>
+        </p>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+            <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-indigo-700 sm:text-4xl"data-aos="fade-right">Hallo Selamat datang</h1>
+                    <p class="mt-1.5 text-sm text-gray-600"data-aos="fade-right">
+                        Kamu laper? nikmati nasi goreng lezat ini
+                    </p>
+                  
+                </div>
+                <div class="flex items-center gap-4"data-aos="fade-left" data-aos-delay="50"
+                data-aos-duration="1000">
+                    <button class="inline-flex items-center justify-center gap-1.5 rounded-full border border-indigo-200 bg-indigo-50 px-5 py-3 text-indigo-700 transition hover:bg-indigo-100 focus:outline-none focus:ring focus:ring-indigo-300" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                    <a href="https://wa.me/628989156710" class="inline-block rounded-full bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300" type="button">
+                        Chat penjual
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Pencarian -->
+    <section class="relative bg-cover bg-center py-24 md:py-40 transition duration-300 hover:bg-opacity-75" style="background-image: url('assets/image/bannerr.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 transition duration-300 hover:bg-opacity-25"></div>
+        <div class="relative mx-auto max-w-4xl px-4 text-center text-white" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold md:text-4xl mb-4 text-white">
+                Nasi Goreng Spesial
+            </h2>
+            <p class="text-white mb-8">
+                Nikmati kelezatan nasi goreng dengan bumbu spesial yang menggugah selera. Pesan sekarang dan rasakan bedanya!
+            </p>
+            <a href="#menu" class="inline-block bg-indigo-600 text-white text-lg font-medium px-6 py-3 rounded-full transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
+                Pesan Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8"data-aos="fade-up"
+            data-aos-duration="1000">Tentang Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+               
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg"data-aos="fade-up"
+                data-aos-duration="1500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Visi dan Misi</h3>
+                    <p class="text-gray-600 text-2xl">
+                        Visi kami adalah menjadi warung nasi goreng terbaik yang dikenal luas karena kualitas dan rasa yang luar biasa.
+                        Misi kami adalah memberikan pelayanan terbaik dan menyajikan nasi goreng dengan cita rasa yang konsisten dan memuaskan. Kami berkomitmen untuk selalu menggunakan bahan-bahan berkualitas tinggi dan menjaga kebersihan dalam setiap proses penyajian.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kategori Populer -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8"data-aos="fade-down" data-aos-duration="1000">Menu Populer</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#" class="group"data-aos="fade-up"
+              data-aos-duration="1000">
+                    <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-200 hover:bg-opacity-75 transition">
+                        <img src="assets/image/product/nasi_goreng+specsial.jpeg" alt="Buku" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-700 group-hover:text-indigo-600 text-center">Nasi Goreng Spesial</h3>
+                </a>
+                <a href="#" class="group"data-aos="fade-up"
+               data-aos-duration="2000">
+                    <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-200 hover:bg-opacity-75 transition">
+                        <img src="assets/image/product/mie_gorengayam.jpeg" alt="Mie Goreng specsial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-700 group-hover:text-indigo-600 text-center">Mie Goreng specsial</h3>
+                </a>
+                <a href="#" class="group"data-aos="fade-up"
+               data-aos-duration="3000">
+                    <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-200 hover:bg-opacity-75 transition">
+                        <img src="assets/image/product/kwetiau.jpeg" alt="Kwetiau Spesial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-700 group-hover:text-indigo-600 text-center">Kwetiau specsial</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Produk Unggulan -->
+    <section class="py-12 bg-gray-50" id="menu">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8" data-aos="flip-up" data-aos-delay="35">Menu di warung nasi goreng</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-6"> <!-- Updated here -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-300 hover:bg-opacity-75 transition" data-aos="fade-right"
+                     data-aos-duration="2000">
+                    <img src="assets/image/product/nasi_goreng+specsial.jpeg" alt="Nasi Goreng Spesial" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Nasi Goreng Spesial</h3>
+                        <p class="text-gray-600 mt-2">Nasi goreng spesial ini digoreng dengan berbagai bumbu yang dijamin lezat</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-indigo-600 font-bold">Rp 25.000</span>
+                            <a href="https://wa.me/628989156710?text=Pesan nasi goreng 1" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Beli</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-300 hover:bg-opacity-75 transition" data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <img src="assets/image/product/nasi_goreng.jpeg" alt="Produk 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Nasi Goreng Biasa</h3>
+                        <p class="text-gray-600 mt-2">Nasi Goreng dengan aroma lezat pasti enak bisa menjadi makanan anda di malam hari saat lapar</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-indigo-600 font-bold">Rp 14.000</span>
+                            <a href="https://wa.me/628989156710?text=Pesan mie goreng biasa 1" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Beli</a>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+    
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-6 pt-6 justify-center"> <!-- Updated here -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-300 hover:bg-opacity-75 transition" data-aos="fade-right"
+                     data-aos-duration="2000">
+                    <img src="assets/image/product/kwetiau.jpeg" alt="Kwetiau Goreng Spesial" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Kwetiau Goreng Spesial</h3>
+                        <p class="text-gray-600 mt-2">Kwetiau goreng spesial ini digoreng dengan berbagai bumbu yang dijamin lezat</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-indigo-600 font-bold">Rp 25.000</span>
+                            <a href="https://wa.me/628989156710?text=Pesan kwetiau goreng bang 1" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Beli</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-300 hover:bg-opacity-75 transition" data-aos="fade-left"
+                     data-aos-duration="2000">
+                    <img src="assets/image/product/mie_gorengayam.jpeg" alt="Produk 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Mie goreng biasa</h3>
+                        <p class="text-gray-600 mt-2">Nasi Goreng dengan aroma lezat pasti enak bisa menjadi makanan anda di malam hari saat lapar</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-indigo-600 font-bold">Rp 14.000</span>
+                            <a href="https://wa.me/628989156710?text=Pesan mie goreng 1" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-6 pt-6 justify-center"> <!-- Updated here -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-300 hover:bg-opacity-75 transition" data-aos="fade-up"
+                     data-aos-duration="2000">
+                    <img src="assets/image/product/mie_rebus.jpeg" alt="Produk 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Mie Rebus</h3>
+                        <p class="text-gray-600 mt-2">Mie rebus enak dan hangat cocok untuk udara dingin seperti saat ini</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-indigo-600 font-bold">Rp 14.000</span>
+                            <a href="https://wa.me/628989156710?text=Pesan mie rebus bang 1" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Beli</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:border-4 hover:border-indigo-700 hover:bg-gray-300 hover:bg-opacity-75 transition" data-aos="fade-down"
+                     data-aos-duration="2000">
+                    <img src="assets/image/product/kwetiau-biasa.jpg" alt="Produk 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">kwetiau biasa</h3>
+                        <p class="text-gray-600 mt-2">Nasi Goreng dengan aroma lezat pasti enak bisa menjadi makanan anda di malam hari saat lapar</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-indigo-600 font-bold">Rp 14.000</span>
+                            <a href="https://wa.me/628989156710?text=Pesan kwetiau 1" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lokasi Penjualan -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-left"
+            data-aos-duration="300">Lokasi Penjualan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden" data-aos="fade-down" data-aos-duration="2000">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.972885153679!2d106.92442367499184!3d-6.39749569359312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjMnNTEuMCJTIDEwNsKwNTUnMzcuMiJF!5e0!3m2!1sid!2sid!4v1727573991761!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="flex flex-col justify-center bg-gray-50 rounded-lg shadow-lg p-8" data-aos="fade-down" data-aos-duration="2000">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Alamat Warung Nasi Goreng Camau</h3>
+                    <p class="text-gray-600 mb-4">Jl. Contoh No. 123, Cikeas Udik, Kec Gunung Putri, Kabupaten Bogor, Jawa Barat</p>
+                    <p class="text-gray-600 mb-4">Telepon: (628)-989-156-710</p>
+                    <p class="text-gray-600 mb-4">Buka: 19.00 - 00.00 SETIAP HARI</p>
+                    <a href="https://www.google.com/maps/place/6%C2%B023'51.0%22S+106%C2%B055'37.2%22E/@-6.3974957,106.9244237,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-6.3974957!4d106.9269986?hl=id&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="inline-block bg-indigo-600 text-white text-lg font-medium px-6 py-3 rounded-full transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
+                        Dapatkan Petunjuk Arah
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tentang Kami</h3>
+                    <p class="text-gray-400">Warung Nasi Goreng Spesial adalah tempat terbaik untuk menikmati nasi goreng dengan bumbu spesial yang menggugah selera.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Menu</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
+                    <p class="text-gray-400">Jl. Wanaherang jawa barat</p>
+                    <p class="text-gray-400">Telepon: (628)-5157-1662-84 </p>
+                    <p class="text-indigo-400"><a href="https://www.instagram.com/hxans_1?igsh=b3hzNXc1Z2RiM3Fi" class="hover:text-indigo-700">Desain web</a></p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-400">&copy; 2024 Warung Nasi Goreng Camau. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  
