@@ -18,6 +18,24 @@
         * {
             scroll-behavior: smooth;
         }
+        .container {
+            max-width: 100%;
+            overflow-x: hidden; /* Mencegah scroll horizontal */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 640px) {
+            .grid-cols-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 768px) {
+            .grid-cols-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
